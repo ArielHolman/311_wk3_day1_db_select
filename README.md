@@ -43,21 +43,27 @@ Also, put the answers in the "Query Responses" section of this README.
 
 ## Query Responses
 
-1.
-  * How many rows were returned:
-  * First name of the first user:
+1. Select all fields from users where the city equals Chicago
+  * How many rows were returned: // 7
+  * First name of the first user: // Mitsue 
+  * Query: // SELECT * FROM users WHERE  city='Chicago'
 
-2.
-  * How many rows were returned:
-  * What states do they live in:
+2.  Select the "state" field for users with a first name of "Glory"
+  * How many rows were returned: // 2
+  * What states do they live in: // MD, TX
+  * Query: // SELECT state FROM users WHERE  first_name='Glory'
 
-3.
-  * How many rows were returned:
-  * What's the last email on the list:
+3. Select all fields from users who's phone1 starts with "773"
+  * How many rows were returned: // 6
+  * What's the last email on the list:  // nichelle_meteer@meteer.com
+  * Query: // SELECT * FROM users WHERE phone1 LIKE "773%"
 
 ## Summary
 
 Think about how this data is laid out. Feel free to look in the `initialize.sql` file to see the raw data.
 
 * Do you think it would be easier or harder to search through this data manually or using SQL?
+// It would be so much harder to search through thousands of users to just get on set of user depending on the city without SQL.
+
 * What about when the dataset gets larger?
+  // Do yourself a favor and just use SQL. Save yourself from straining your eyes.
